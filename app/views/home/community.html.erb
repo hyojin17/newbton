@@ -1,0 +1,16 @@
+<h1>게시판</h1>
+
+
+ <% @posts.each do |post| %>
+    
+        <span><%= post.id %></span> 
+        
+          <span><a href= "/home/show/<%= post.id%>"><%= post.title %><%= post.content %></a></span>
+        <span><a href= "/home/edit/<%= post.id%>">수정</a></span>
+        <span><a href= "/home/destroy/<%= post.id%>" data-method="post">삭제</a></span>
+        
+
+    <% end %>
+
+
+<a href= "/home/new/">글작성하기</a>

@@ -1,0 +1,10 @@
+
+<h1><%= @post.id%></h1>
+
+
+    <div>제목:<%= @post.title %></div>
+    <div>내용:<%= @post.content %></div>
+
+
+    <a href = "/">홈으로</a>   
+    <a href = "/home/destroy" data-confirm="진짜로 삭제하시겠습니까?" data-method="post">삭제하기</a>
